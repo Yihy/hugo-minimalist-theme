@@ -14,10 +14,10 @@
             <!--{{ template "_internal/disqus.html" . }}-->
         <!--</div>-->
         {{ end }}
-        {{ if .Site.UYanUid }}
+        {{ if .Site.DisqusShortname }}
         <!-- UY BEGIN -->
         <div id="uyan_frame"></div>
-        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{ .Site.UYanUid }}"></script>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{ .Site.DisqusShortname }}"></script>
         <!-- UY END -->
         {{ end }}
     </main>
