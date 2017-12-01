@@ -9,10 +9,15 @@
             {{ partial "article-share" . }}
         </article>
         {{ if .Site.DisqusShortname }}
-        <div class="comments">
-            <h3>{{ .Site.Data.l10n.comments.comments }}</h3>
-            {{ template "_internal/disqus.html" . }}
-        </div>
+        <!--<div class="comments">-->
+            <!--<h3>{{ .Site.Data.l10n.comments.comments }}</h3>-->
+            <!--{{ template "_internal/disqus.html" . }}-->
+        <!--</div>-->
+
+        <!-- UY BEGIN -->
+        <div id="uyan_frame"></div>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2150968"></script>
+        <!-- UY END -->
         {{ end }}
     </main>
     {{ partial "author" . }}
